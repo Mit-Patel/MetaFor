@@ -1,0 +1,7 @@
+Pillow
+PyPDF2
+tinytag
+olefile
+GPSPhoto
+exifread
+piexif

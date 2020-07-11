@@ -1,0 +1,43 @@
+﻿<Page x:Class="MetaFor_Demo.pgAboutUs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MetaFor_Demo"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"        
+      Background="{StaticResource PageBgColor}" d:DesignWidth="800"
+      Title="pgAboutUs" Height="1555.374">
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Abstract" Style="{StaticResource MaterialDesignHeadline4TextBlock}" />
+        <TextBlock Text="&quot;MetaFor&quot; is a meta-analysis tool with the competency of report generation for various extensions of data which will help the police fraternity to gather key information for the same. With the feature of an online desktop application and an easy to use UI, we have tried our best to use the latest technology to put the tool together and cover as many possible data extensions in the provided time frame." Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" TextAlignment="Justify"/>
+        <TextBlock Text="Acknowledgement" Style="{StaticResource MaterialDesignHeadline4TextBlock}" Margin="0,20,0,0"/>
+        <TextBlock xml:space="preserve" Style="{StaticResource MaterialDesignBody1TextBlock}" TextWrapping="Wrap" TextAlignment="Justify">We express our sincere gratitude to Gurugram police for providing us an opportunity to be part of this Gurugram Police Summer Internship 2020 to complete this Tool based Project on "<Bold>MetaFor - The Metadata Analysis Tool</Bold>". 
+
+We sincerely thank  
+    1. Sh. K.K. Rao (Commissioner of Police, Gurugram) 
+    2. Ms Nikita Gehlawat (DCP) 
+    3. Ms Pankhuri Kumar (ACP SO1) 
+    4. Mr. Karan Goyal (ACP Cyber Crime)
+    5. Mr. Rakshit Tandon (Cyber Safety Advisor Cyber Crime, Director Council of Information Security, 
+        Consultant-Internet &amp; Mobile Association of India) 
+    6. Ms Akshita Jain (Systems Engineer) 
+
+For their guidance and encouragement in carrying out this project work. We also thank all the experts invited to GPCSSI 2020 for giving out their experience and knowledge to us, to learn and grow.
+
+        </TextBlock>
+        <TextBlock Text="The Team" Style="{StaticResource MaterialDesignHeadline4TextBlock}" Margin="0,20,0,0"/>
+        
+        <TextBlock xml:space="preserve" Style="{StaticResource MaterialDesignBody1TextBlock}" Margin="20,0,0,0">1. Mit Patel
+2. Garima Pandita
+3. Harshil Nagrath
+4. Mayank Chahal
+5. Ritwick Dadhich
+6. Japjyot Singh Gulati
+7. Nanak Khurana
+8. Swati Tripathi
+9. Karan Nandwani
+10. Ritik Sahni</TextBlock>
+    </StackPanel>
+</Page>

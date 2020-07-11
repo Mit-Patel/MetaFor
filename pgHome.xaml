@@ -1,0 +1,64 @@
+﻿<Page x:Class="MetaFor_Demo.pgHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MetaFor_Demo"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"        
+      Background="{StaticResource PageBgColor}"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="800"
+      Title="pgHome">
+
+    <Grid>
+        <StackPanel>
+            <Border Background="WhiteSmoke" Margin="10 20" CornerRadius="5">
+                <StackPanel Margin="25" Orientation="Vertical">
+                    <TextBlock TextWrapping="Wrap" Text="Please give the path of the folder and select the type of information you want to extract" Style="{StaticResource MaterialDesignHeadline5TextBlock}"/>
+                    <GroupBox Height="Auto" Margin="20,20,20,20" Style="{StaticResource MaterialDesignCardGroupBox}">
+                        <GroupBox.Header>
+                            <Label Content="Select Source" Foreground="{StaticResource MenuItemFgColor}" FontSize="14"/>
+                        </GroupBox.Header>
+                        <DockPanel LastChildFill="True">
+                            <Button x:Name="btnBrowse" Content="Browse" DockPanel.Dock="Right" Margin="20" Foreground="{StaticResource MenuItemFgColor}" TabIndex="1" Click="btnBrowse_Click"/>
+                            <TextBox x:Name="txtSourcePath" materialDesign:HintAssist.Hint="Source Path" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="20" TabIndex="0"/>
+                        </DockPanel>
+                    </GroupBox>
+                    <GroupBox Height="Auto" Margin="20,0,20,20" Style="{StaticResource MaterialDesignCardGroupBox }" >
+                        <GroupBox.Header>
+                            <Label Content="Select Type of Extractions" Foreground="{StaticResource MenuItemFgColor}" FontSize="14"/>
+                        </GroupBox.Header>
+                        <Grid Margin="60,0,60,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*" />
+                                <ColumnDefinition Width="33*" />
+                                <ColumnDefinition Width="33*" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Margin="20">
+                                <CheckBox x:Name="cbJpg" Content="jpg" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="2" />
+                                <CheckBox x:Name="cbJpeg" Content="jpeg" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="2" />
+                                <CheckBox x:Name="cbPng" Content="png" Margin="0,0,0,10"  FontSize="14" VerticalContentAlignment="Bottom" TabIndex="3"/>
+                                <CheckBox x:Name="cbMp3" Content="mp3" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="4"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="20">
+                                <CheckBox x:Name="cbMp4" Content="mp4" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="2" />
+                                <CheckBox x:Name="cbMkv" Content="mkv" Margin="0,0,0,10"  FontSize="14" VerticalContentAlignment="Bottom" TabIndex="3"/>
+                                <CheckBox x:Name="cbZip" Content="zip" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="4"/>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2" Margin="20">
+                                <CheckBox x:Name="cbDoc" Content="doc" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="5"/>
+                                <CheckBox x:Name="cbExcel" Content="xls" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="5"/>
+                                <CheckBox x:Name="cbPdf" Content="pdf" Margin="0,0,0,10" FontSize="14" VerticalContentAlignment="Bottom" TabIndex="6"/>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                    
+                    <Button x:Name="btnStart" Content="{materialDesign:PackIcon Play, Size=30}" Style="{StaticResource MaterialDesignFloatingActionButton
+}" Foreground="{StaticResource MenuItemFgColor}" TabIndex="7" Click="btnStart_Click" />
+
+                    <materialDesign:Snackbar x:Name="sbErr" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="50" Margin="20" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Application x:Class="MetaFor_Demo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MetaFor_Demo"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="PrimaryColor" Color="#2196f3" />
+            <SolidColorBrush x:Key="SecondaryColor" Color="#FFD50000" />
+            <SolidColorBrush x:Key="PageBgColor" Color="White" />
+            <SolidColorBrush x:Key="MenuItemFgColor" Color="#FFFFFFFF" />
+            <SolidColorBrush x:Key="MenuItemActiveBgColor" Color="#0d47a1" />
+            
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Blue" SecondaryColor="Red" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBlock.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>        
+        
+    </Application.Resources>
+    
+</Application>
